@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>LEAD_Management_Form</title>
+    
+    
+</head>
+<body>
+    <div class="contact-container">
+        <form action=""  class="contact-left" >
+            
+
+            <div class="contact-left-title">
+                <h2>LEAD MANAGEMENT FORM</h2>
+                <hr>
+                
+            </div>
+            <input type="text" placeholder="First Name" maxlength="30" name="FirstName" id="firsty" class="contact-inputs" required>
+           
+                <input type="text" placeholder="Middle Name" maxlength="30" name="MiddleName" id="middle" class="contact-inputs">
+                <input type="text" placeholder="Last Name" maxlength="30" name="LastName" id="lasty" class="contact-inputs" required>
+                
+                <input type="email" placeholder="Email" name="emailing" id="emailer" maxlength="50" class="contact-inputs" required>
+                <input type="text" placeholder="Mobile Number(+91)" maxlength="10" name="mobilenumber" id="phono" class="contact-inputs" required>
+                <p class="yc">Gender:</p>
+                <div class="same">
+                    <input type="radio" value="male" name="male" ><label for="male" class="yc">Male</label>
+                    <input type="radio" value="female" name="male" ><label for="male" class="yc">Female</label>
+                    <input type="radio" value="other" name="male" ><label for="other" class="yc">Other</label>
+                </div>
+                 <input type="text" placeholder="Company" name="Company" id="compo" class="contact-inputs" maxlength="50" required>
+               
+                <input name="address" placeholder="Address" class="contact-inputs" maxlength="150"></input>
+                <textarea name="requirement" maxlength="255"  placeholder="Requirement" id="texting" class="contact-inputs"></textarea>
+                <div id="characterRemaining"></div>
+              
+              
+                <button type="submit" class="point" onclick="validatePhone();validateEmail()">Submit <img src="arrow_icon.png" alt="arrow"></button>
+        </form>
+        <div class="contact-right">
+            <img src="right_img.png" alt="right">
+        </div>
+    </div>
+    <script src="index.js"></script> 
+</body>
+</html>
